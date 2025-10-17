@@ -1,11 +1,5 @@
-:root {
-    --bg-secondary: rgb(54, 54, 54);
-    --bg-plain: #e4e4e4;
-    --light-text: #fff;
-    --link-hover: rgb(219, 69, 83);
-    --title-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --text-font-family: Verdana, Geneva, Tahoma, sans-serif;
-    --section-border: 1px solid #cacaca;
+body {
+    background-color: #e4e4e4;
 }
 
 body,
@@ -15,13 +9,9 @@ ul {
     padding: 0;
 }
 
-body {
-    background-color: var(--bg-plain);
-}
-
 body > header {
-    background-color: var(--bg-secondary);
-    color: var(--light-text);
+    background-color: rgb(54, 54, 54);
+    color: #fff;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     padding: 20px 0;
@@ -31,14 +21,15 @@ nav {
     margin: 0 4%;
 }
 
-nav ul {
+nav ul,
+aside ul {
     list-style: none;
 }
 
 nav ul li {
     display: inline-block;
     width: 45%;
-    background-color: var(--bg-secondary);
+    background-color: rgb(54, 54, 54);
     text-align: center;
     margin-top: 10px;
 }
@@ -47,19 +38,20 @@ nav ul li:nth-child(odd) {
     margin-right: 10%;
 }
 
-nav ul li a,
-aside > section > ul > li > a {
+nav ul li a {
     display: inline-block;
     width: 100%;
     height: 100%;
     padding: 5px 0;
-    font-family: var(--title-font-family);
-    color: var(--light-text);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: var(--link-hover);
+nav ul li a:hover,
+main > article > a:hover,
+aside > section > ul > li > a:hover {
+    color: rgb(219, 69, 83);
 }
 
 body > main {
@@ -68,16 +60,17 @@ body > main {
 
 main > h2 {
     text-align: center;
-    font-family: var(--title-font-family);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main > article {
     background-color: #fff;
-    border: var(--section-border);
+    border: 1px solid #cacaca;
     text-align: center;
     margin-bottom: 20px;
     padding: 0 5% 20px;
 }
+
 
 main > article > img {
     max-width: 100%;
@@ -86,8 +79,8 @@ main > article > img {
 
 main > article > h3,
 main > article > p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
-    font-family: var(--title-font-family);
 }
 
 main > article > p {
@@ -95,24 +88,27 @@ main > article > p {
 }
 
 main > article > p:nth-of-type(2) {
-    font-family: var(--text-font-family);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 main > article > a {
     color: #000;
     text-decoration: none;
-    background-color: var(--bg-plain);
+    background-color: #e4e4e4;
     border-radius: 5px;
     padding: 5px 10px;
-    font-family: var(--title-font-family);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 aside {
     background-color: #fff;
     margin: 0 5%;
-    border: var(--section-border);
-    font-family: var(--title-font-family);
+    border: 1px solid #cacaca;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 aside > section {
     padding: 0 5% 20px;
@@ -126,7 +122,7 @@ aside > section > ul > li {
     margin-bottom: 10px;
 }
 
-aside > section > ul > li > img {
+aside section > ul > li > img {
     float: left;
     width: 50px;
 }
