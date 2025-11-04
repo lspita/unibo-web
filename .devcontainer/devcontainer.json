@@ -21,11 +21,6 @@
             "target": "/var/www/html",
             "type": "bind"
         }
-        // {
-        //     "source": "${localEnv:HOME}/.ssh",
-        //     "target": "/home/${DOCKER_USER}/.ssh",
-        //     "type": "bind"
-        // }
     ],
     "customizations": {
         "vscode": {
