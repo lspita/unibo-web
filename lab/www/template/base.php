@@ -4,6 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $templateParams["titolo"]; ?></title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<?php
+    if(isset($templateParams["js"])):
+        foreach($templateParams["js"] as $script):
+    ?>
+        <script src="<?php echo $script; ?>"></script>
+    <?php
+        endforeach;
+    endif;
+    ?>
+
 </head>
 <body>
     <header>
@@ -42,7 +52,7 @@
         </section>
     </aside>
     <footer>
-        <p>Tecnologie Web - A.A. 2025/2026</p>
+        <p>Tecnologie Web - A.A. 2024/2025</p>
     </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@ require_once 'bootstrap.php';
 
 //Base Template
 $templateParams["titolo"] = "Blog TW - Contatti";
-$templateParams["nome"] = "lista-contatti.php";
+$templateParams["nome"] = "contatti.php";
 $templateParams["categorie"] = $dbh->getCategories();
 $templateParams["articolicasuali"] = $dbh->getRandomPosts(2);
 //Home Template
