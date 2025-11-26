@@ -1,4 +1,9 @@
 <?php
+function envValue(string $key): ?string {
+    $value = getenv($key);
+    return $value === false ? null : $value;
+}
+
 function isActive($pagename){
     if(basename($_SERVER['PHP_SELF'])==$pagename){
         echo " class='active' ";
